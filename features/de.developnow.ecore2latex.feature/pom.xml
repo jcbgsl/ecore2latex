@@ -5,6 +5,7 @@
 		<groupId>de.developnow.ecore2latex</groupId>
 		<artifactId>de.developnow.ecore2latex.parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../../releng/de.developnow.ecore2latex.parent</relativePath>
 	</parent>
 	<artifactId>de.developnow.ecore2latex.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
