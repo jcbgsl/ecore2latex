@@ -1,7 +1,21 @@
-*.class
-target/
-bin/
+# Eclipse base stuff
+.classpath
+.settings/
+.project
 .metadata
+*.launch
+bin/
+
+# Java stuff
 *.jar
 *.war
 *.ear
+*.class
+
+# Maven stuff
+target/
+
+
+
+
+
