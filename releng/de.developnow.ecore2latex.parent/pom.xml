@@ -45,5 +45,8 @@
 		<module>
 			../../plugins/de.developnow.ecore2latex.transformation.ui
 		</module>
+		<module>
+			../../features/de.developnow.ecore2latex.feature
+		</module>
 	</modules>
 </project>
