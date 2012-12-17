@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateLatex.
+ */]
+[module generateLatex('http://www.eclipse.org/emf/2002/Ecore')]
+
+
+[**
+ * The documentation of the template generateModel.
+ * @param anOclAny
+ */]
+[template public generateModel(anEPackage : EPackage)]
+[comment @main/]
+[file (anEPackage.name, false, 'UTF-8')]
+
+[/file]
+[/template]
