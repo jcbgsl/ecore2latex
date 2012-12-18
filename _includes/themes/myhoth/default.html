@@ -62,11 +62,11 @@
               <li class="divider-vertical"></li>
               {% if site.author.github %}
                 <li>
-                  <a href="https://www.github.com/{{ site.author.github }}" class="zocial github icon" target="_blank">
+                  <a href="https://github.com/{{ site.author.github }}/{{ site.author.gitrepository }}" class="zocial github icon" target="_blank">
                     <span class="hidden-desktop">Github</a>
                   </a>
                 </li>
-              {% endif %}
+			  {% endif %}
               {% if site.author.googleplus %}
                 <li>
                   <a href="https://profiles.google.com/{{ site.author.google }}" class="zocial googleplus icon" target="_blank">
@@ -102,21 +102,13 @@
                   </a>
                 </li>
               {% endif %}
-			  {% if site.author.github %}
-			  {% if site.author.gitrepository %}
+              {% if site.author.email %}
                 <li>
-                  <a href="https://github.com/{{ site.author.github }}/{{ site.author.gitrepository }}/fork" class="zocial icon" target="_blank">Fork
-                    <span class="hidden-desktop">FeedBurner</a>
-                  </a>
-                </li>
-				<li>
-                  <a href="https://github.com/{{ site.author.github }}/{{ site.author.gitrepository }}/archive/master.zip" class="zocial icon" target="_blank">.zip
-                    <span class="hidden-desktop">FeedBurner</a>
+                  <a href="mailto:{{ site.author.email }}?Subject=ecore2latex"" class="zocial email icon">
+                    <span class="hidden-desktop">gmail</a>
                   </a>
                 </li>
               {% endif %}
-			  {% endif %}
-			  
             </ul>
           </div>
         </div>
