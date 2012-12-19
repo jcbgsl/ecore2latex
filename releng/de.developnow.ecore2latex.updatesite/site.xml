@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/de.developnow.ecore2latex.feature_0.0.1.201212191528.jar" id="de.developnow.ecore2latex.feature" version="0.0.1.201212191528">
+      <category name="ecore2latex"/>
+   </feature>
+   <category-def name="ecore2latex" label="Ecore2Latex"/>
+</site>

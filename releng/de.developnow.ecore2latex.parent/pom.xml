@@ -52,5 +52,6 @@
 			../../features/de.developnow.ecore2latex.feature
 		</module>
 
+		<module>../de.developnow.ecore2latex.updatesite</module>
 	</modules>
 </project>
