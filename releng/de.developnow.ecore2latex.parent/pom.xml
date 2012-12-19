@@ -35,23 +35,53 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
 	<modules>
-		<module>
-			../../plugins/de.developnow.ecore2latex.transformation
-		</module>
-		<module>
-			../../plugins/de.developnow.ecore2latex.transformation.ui
-		</module>
-		<module>
-			../../plugins/de.developnow.ecore2latex.preferences
-		</module>
-		<module>
-			../../features/de.developnow.ecore2latex.feature
-		</module>
-
+		<module>../../plugins/de.developnow.ecore2latex.transformation</module>
+		<module>../../plugins/de.developnow.ecore2latex.transformation.ui</module>
+		<module>../../plugins/de.developnow.ecore2latex.preferences</module>
+		<module>../../features/de.developnow.ecore2latex.feature</module>
 		<module>../de.developnow.ecore2latex.updatesite</module>
 	</modules>
 </project>
