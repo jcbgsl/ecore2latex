@@ -8,12 +8,14 @@
  * Contributors:
  *     Jacob Geisel
  *******************************************************************************/
-package de.developnow.ecore2latex.preferences;
+package de.developnow.ecore2latex.preferences.internal;
 
 import org.eclipse.jface.preference.FieldEditorPreferencePage;
 import org.eclipse.jface.preference.StringFieldEditor;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
+
+import de.developnow.ecore2latex.preferences.PreferenceConstants;
 
 public class E2LPreferencePage
 extends FieldEditorPreferencePage

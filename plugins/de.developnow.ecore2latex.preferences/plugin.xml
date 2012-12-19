@@ -4,15 +4,15 @@
    <extension
          point="org.eclipse.ui.preferencePages">
       <page
-            class="de.developnow.ecore2latex.preferences.E2LPreferencePage"
-            id="de.developnow.ecore2latex.preferences.E2LPreferencePage"
+            class="de.developnow.ecore2latex.preferences.internal.E2LPreferencePage"
+            id="de.developnow.ecore2latex.preferences.internal.E2LPreferencePage"
             name="ecore2latex Preferences">
       </page>
    </extension>
    <extension
          point="org.eclipse.core.runtime.preferences">
       <initializer
-            class="de.developnow.ecore2latex.preferences.PreferenceInitializer">
+            class="de.developnow.ecore2latex.preferences.internal.PreferenceInitializer">
       </initializer>
    </extension>
 

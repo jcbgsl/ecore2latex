@@ -8,10 +8,13 @@
  * Contributors:
  *     Jacob Geisel
  *******************************************************************************/
-package de.developnow.ecore2latex.preferences;
+package de.developnow.ecore2latex.preferences.internal;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
+
+import de.developnow.ecore2latex.preferences.PreferenceHelper;
+
 
 /**
  * The activator class controls the plug-in life cycle
@@ -23,6 +26,8 @@ public class Activator extends AbstractUIPlugin {
 
 	// The shared instance
 	private static Activator plugin;
+
+	private PreferenceHelper preferenceHelper;
 	
 	/**
 	 * The constructor
@@ -37,6 +42,7 @@ public class Activator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
+		preferenceHelper = new PreferenceHelper();
 	}
 
 	/*
@@ -45,6 +51,7 @@ public class Activator extends AbstractUIPlugin {
 	 */
 	public void stop(BundleContext context) throws Exception {
 		plugin = null;
+		preferenceHelper = null;
 		super.stop(context);
 	}
 
@@ -55,6 +62,10 @@ public class Activator extends AbstractUIPlugin {
 	 */
 	public static Activator getDefault() {
 		return plugin;
+	}
+	
+	public PreferenceHelper getPreferenceHelper() {
+		return preferenceHelper;
 	}
 
 }

@@ -3,8 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Preferences
 Bundle-SymbolicName: de.developnow.ecore2latex.preferences;singleton:=true
 Bundle-Version: 0.0.1.qualifier
-Bundle-Activator: de.developnow.ecore2latex.preferences.Activator
+Bundle-Activator: de.developnow.ecore2latex.preferences.internal.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: de.developnow.ecore2latex.preferences;uses:="org.eclipse.ui.plugin,org.osgi.framework"

@@ -8,12 +8,12 @@
  * Contributors:
  *     Jacob Geisel
  *******************************************************************************/
-package de.developnow.ecore2latex.preferences;
+package de.developnow.ecore2latex.preferences.internal;
 
 import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
 import org.eclipse.jface.preference.IPreferenceStore;
 
-import de.developnow.ecore2latex.preferences.Activator;
+import de.developnow.ecore2latex.preferences.PreferenceConstants;
 
 /**
  * Class used to initialize default preference values.
