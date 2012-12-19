@@ -13,6 +13,7 @@ package de.developnow.ecore2latex.preferences.internal;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
+import de.developnow.ecore2latex.preferences.IPreferenceHelper;
 import de.developnow.ecore2latex.preferences.PreferenceHelper;
 
 
@@ -27,7 +28,7 @@ public class Activator extends AbstractUIPlugin {
 	// The shared instance
 	private static Activator plugin;
 
-	private PreferenceHelper preferenceHelper;
+	private IPreferenceHelper preferenceHelper;
 	
 	/**
 	 * The constructor
@@ -64,7 +65,7 @@ public class Activator extends AbstractUIPlugin {
 		return plugin;
 	}
 	
-	public PreferenceHelper getPreferenceHelper() {
+	public IPreferenceHelper getPreferenceHelper() {
 		return preferenceHelper;
 	}
 

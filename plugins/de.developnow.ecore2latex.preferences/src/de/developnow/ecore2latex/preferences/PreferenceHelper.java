@@ -15,7 +15,7 @@ import org.eclipse.jface.preference.IPreferenceStore;
 import de.developnow.ecore2latex.preferences.internal.Activator;
 
 
-public class PreferenceHelper {
+public class PreferenceHelper implements IPreferenceHelper {
 
 	private IPreferenceStore store;
 
@@ -23,11 +23,12 @@ public class PreferenceHelper {
 		store = Activator.getDefault().getPreferenceStore();
 	}
 
+	@Override
 	public String getPreferenceString(String p_constant) {
 		return store.getString(p_constant);
 	}
 
-	public static PreferenceHelper getPreferenceHelper() {
+	public static IPreferenceHelper getPreferenceHelper() {
 		return Activator.getDefault().getPreferenceHelper();
 	}
 
