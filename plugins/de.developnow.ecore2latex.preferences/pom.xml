@@ -8,5 +8,5 @@
 		<relativePath>../../releng/de.developnow.ecore2latex.parent</relativePath>
 	</parent>
 	<artifactId>de.developnow.ecore2latex.preferences</artifactId>
-  <packaging>eclipse-plugin</packaging>
+	<packaging>eclipse-plugin</packaging>
 </project>
