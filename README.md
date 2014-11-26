@@ -11,7 +11,7 @@ The M2T transformation will done by Acceleo based templates, as well as some Jav
 
 The project will be built using maven and tycho, two technologies I've been appreciating a lot recently.
 
-The CI is done on buildhive, and the actual status is ![Build Status](https://buildhive.cloudbees.com/job/jcbgsl/job/ecore2latex/badge/icon).
+The CI is done on buildhive, and the actual status is [![Build Status](https://buildhive.cloudbees.com/job/jcbgsl/job/ecore2latex/badge/icon)](https://buildhive.cloudbees.com/job/jcbgsl/job/ecore2latex/).
 
 An update site with the current release, as well as as an update site with milestones will be coming soon... 
 
